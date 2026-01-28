@@ -103,3 +103,122 @@ function carre(tab) {
 function estTableau(v) {
   return Array.isArray(v);
 }
+//ex 12
+function minimum(tab) {
+    var min=tab[0]
+    for (var i = 1; i < tab.length; i++) {
+        if (min>tab[i]) {
+            min=tab[i]
+            
+        }
+        
+        
+    }
+    return min
+    
+}
+//ex 13
+function maximum(tab) {
+    var max=tab[0]
+    for (var i = 1; i < tab.length; i++) {
+        if (max<tab[i]) {
+            max=tab[i]
+            
+        }
+        
+        
+    }
+    return max
+    
+}
+//ex 14
+function chainepluscourte(tab) {
+    var min=tab[0]
+    for (var i = 1; i < tab.length; i++) {
+        if (min.length>tab[i].length) {
+            min=tab[i]
+            
+        }
+        
+        
+    }
+    return min
+    
+}
+//ex 15
+function chainepluslong(tab) {
+    var max=tab[0]
+    for (var i = 1; i < tab.length; i++) {
+        if (max.length<tab[i].length) {
+            max=tab[i]
+            
+        }
+        
+        
+    }
+    return max
+    
+}
+//ex16
+function pluslonguepluscourte(tab) {
+    var min=tab[0]
+    var max=tab[0]
+    for (var i = 1; i < tab.length; i++) {
+        if (min.length>tab[i].length) {
+            min=tab[i]
+            
+        }
+        
+        
+    } for (var j = 1; j < tab.length; j++) {
+        if (max.length<tab[j].length) {
+            max=tab[j]
+            
+        }
+        
+        
+    }
+    console.log(min,max);//b return ma habtch tkhdm
+    
+    
+}
+//ex17
+function minimumMaximum(tab) {
+    var min=tab[0]
+    var max=tab[0]
+    for (var i = 1; i < tab; i++) {
+        if (min > tab[i]) {
+            min = tab[i]
+            
+        }
+        
+        
+    } for (var j=1; j < tab; j++) {
+        if (max < tab[j]) {
+            max = tab[j]
+            
+        }
+        
+        
+    }
+    console.log(min,max);//b return ma habtch tkhdm
+    
+    
+}
+//ex 18
+function multiple(tab,n) {
+    for (var i = 0; i < tab.length; i++) {
+        tab[i]=tab[i]*n
+        
+    }
+    return tab
+}
+//ex 19
+function multIndex(tab) {
+    for (var i = 0; i < i.length; i++) {
+        tab[i]=tab[i]*i
+        
+    }
+    return tab
+    
+}
