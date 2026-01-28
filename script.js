@@ -89,9 +89,8 @@ function moyenne(tab) {
 }
 //ex 10
 function carre(tab) {
-    var puiss=1
     for (var i = 0; i < tab.length; i++) {
-        tab[i]=tab[i]*puiss
+        tab[i]=tab[i]*tab[i]
         puiss=puiss+1
         
         
